@@ -47,6 +47,11 @@ export class GameService {
   }
 
   async add(gameId: string): Promise<Record<string, string>> {
+    if (gameId.length > 32) {
+      throw new Error(
+        'Game ID is too long. It must be no more than 32 characters.',
+      );
+    }
     const factory = new HallOfFame__factory(this.signer);
     const contract = await factory.deploy(
       ethers.utils.formatBytes32String(gameId),
