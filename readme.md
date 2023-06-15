@@ -2,14 +2,14 @@
 
 This project is a full-stack application that leverages Ethereum smart contracts to manage and track high scores from different games. It's split into two main parts - a backend built with Nest.js and a frontend created with Next.js using TailwindCSS for styles.
 
-## Backend (Nest.js)
+## Backend (Nest.js / Hardhat)
 
 This backend application serves as the bridge between the Ethereum smart contract and the frontend. It exposes a REST API that the frontend consumes. The backend is in charge of creating and interacting with the smart contracts on the Ethereum blockchain. It is responsible for actions such as creating a new game (which deploys a new contract), submitting scores to a game, and fetching the hall of fame (top 10 scores) for a specific game.
 
 You can find this backend service in the `backend` folder. To start the backend service, navigate to this directory in your terminal and run the following commands:
 
 
-## Frontend 
+## Frontend (Next.js)
 
 The frontend of the application provides a user interface for interacting with the smart contracts via the backend. It allows users to create new games, submit scores to these games, and view the hall of fame for each game. It communicates with the backend through the REST API to perform these tasks.
 
