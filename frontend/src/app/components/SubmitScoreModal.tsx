@@ -76,6 +76,7 @@ const SubmitScoreModal: React.FC<SubmitScoreModalProps> = ({
               className="border border-gray-300 rounded px-2 py-1 w-full mb-4"
               value={playerName}
               onChange={(e) => setPlayerName(e.target.value)}
+              required
             />
           </label>
 
@@ -87,6 +88,7 @@ const SubmitScoreModal: React.FC<SubmitScoreModalProps> = ({
               className="border border-gray-300 rounded px-2 py-1 w-full mb-4"
               value={score}
               onChange={(e) => setScore(Number(e.target.value))}
+              required
             />
           </label>
 
