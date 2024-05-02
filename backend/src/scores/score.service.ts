@@ -2,7 +2,10 @@ import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { ethers } from 'ethers';
 import { GameService } from 'src/game/game.service';
-import { HallOfFame__factory, HallOfFame } from '../../hardhat/typechain-types';
+import {
+  HallOfFame__factory,
+  HallOfFame,
+} from '../../hardhat-eth/typechain-types';
 
 @Injectable()
 export class ScoreService {
