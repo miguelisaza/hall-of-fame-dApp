@@ -4,7 +4,7 @@ import { Repository } from 'typeorm';
 import { ethers } from 'ethers';
 import { Game } from './game.entity';
 import { ConfigService } from '@nestjs/config';
-import { HallOfFame__factory } from '../../hardhat/typechain-types';
+import { HallOfFame__factory } from '../../hardhat-eth/typechain-types';
 
 @Injectable()
 export class GameService {
